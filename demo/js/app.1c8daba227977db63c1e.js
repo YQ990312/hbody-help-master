@@ -81,6 +81,7 @@ webpackJsonp([2, 0], {
                 btn: Boolean,
                 colors: Array,
               },
+              //按钮颜色初始化
               data: function () {
                 return {
                   open: !1,
@@ -560,13 +561,14 @@ webpackJsonp([2, 0], {
         selector: s.default,
         switcher: r.default,
       },
+      //界面格式初始化
       data: function () {
         return {
-          TypeValue: "top",
-          MaskType: "",
-          AnimateType: "",
-          isCircle: !1,
-          isBtn: !1,
+          TypeValue: "middle-around",
+          MaskType: "black",
+          AnimateType: "animated rubberBand",
+          isCircle: 1,
+          isBtn: 1,
           NumberType: 4,
           type: ["top", "bottom", "left", "right", "middle", "middle-around"],
           mask: ["无", "white", "black"],
@@ -780,7 +782,7 @@ webpackJsonp([2, 0], {
                   e._v(" "),
                   e._m(0),
                   e._v(" "),
-                  //选择框
+                  //选择box
                   i(
                     "div",
                     {
@@ -965,76 +967,17 @@ webpackJsonp([2, 0], {
                 1
               ),
               e._v(" "),
-
               i(
                 "div",
                 {
                   staticClass: "weui-tabbar nav",
                 },
                 [
-                  i(
-                    "div",
-                    {
-                      directives: [
-                        {
-                          name: "show",
-                          rawName: "v-show",
-                          value: e.MenuLeft,
-                          expression: "MenuLeft",
-                        },
-                      ],
-                      staticClass: "weui-tabbar__item weui-flex",
-                    },
-                    [
-                      e._m(1),
-                      e._v(" "),
-                      i(
-                        "circle-menu",
-                        {
-                          attrs: {
-                            animate: e.AnimateType,
-                            type: e.TypeValue,
-                            mask: e.MaskType,
-                            id: "menu",
-                            circle: e.isCircle,
-                            btn: e.isBtn,
-                            number: e.NumberType,
-                          },
-                        },
-                        [
-                          i("a", {
-                            staticClass: "fa fa-twitter fa-lg",
-                            on: { click: e.item1 },
-                            slot: "item_1",
-                          }),
-                          e._v(" "),
-                          i("a", {
-                            staticClass: "fa fa-weixin fa-lg",
-                            on: { click: e.item2 },
-                            slot: "item_2",
-                          }),
-                          e._v(" "),
-                          i("a", {
-                            staticClass: "fa fa-weibo fa-lg",
-                            on: { click: e.item3 },
-                            slot: "item_3",
-                          }),
-                          e._v(" "),
-                          i("a", {
-                            staticClass: "fa fa-github fa-lg",
-                            on: { click: e.item4 },
-                            slot: "item_4",
-                          }),
-                        ]
-                      ),
-                      e._v(" "),
-                      e._m(2),
-                    ],
-                    1
-                  ),
+                  //首页
                   e._v(" "),
                   e._m(3),
                   e._v(" "),
+                  //按钮
                   i(
                     "div",
                     {
@@ -1090,70 +1033,16 @@ webpackJsonp([2, 0], {
                           }),
                         ]
                       ),
+                      //我的
                       e._v(" "),
                       e._m(5),
                     ],
                     1
                   ),
+                  //审核
                   e._v(" "),
                   e._m(6),
                   e._v(" "),
-                  i(
-                    "div",
-                    {
-                      directives: [
-                        {
-                          name: "show",
-                          rawName: "v-show",
-                          value: e.MenuRight,
-                          expression: "MenuRight",
-                        },
-                      ],
-                      staticClass: "weui-tabbar__item weui-flex",
-                    },
-                    [
-                      e._m(7),
-                      e._v(" "),
-                      i(
-                        "circle-menu",
-                        {
-                          attrs: {
-                            animate: e.AnimateType,
-                            type: e.TypeValue,
-                            mask: e.MaskType,
-                            id: "menu",
-                            circle: e.isCircle,
-                            btn: e.isBtn,
-                            number: e.NumberType,
-                          },
-                        },
-                        [
-                          i("a", {
-                            staticClass: "fa fa-twitter fa-lg",
-                            slot: "item_1",
-                          }),
-                          e._v(" "),
-                          i("a", {
-                            staticClass: "fa fa-weixin fa-lg",
-                            slot: "item_2",
-                          }),
-                          e._v(" "),
-                          i("a", {
-                            staticClass: "fa fa-weibo fa-lg",
-                            slot: "item_3",
-                          }),
-                          e._v(" "),
-                          i("a", {
-                            staticClass: "fa fa-github fa-lg",
-                            slot: "item_4",
-                          }),
-                        ]
-                      ),
-                      e._v(" "),
-                      e._m(8),
-                    ],
-                    1
-                  ),
                 ]
               ),
             ]
@@ -1180,7 +1069,7 @@ webpackJsonp([2, 0], {
                       staticStyle: { "border-radius": "50%" },
                       attrs: {
                         src:
-                          "https://avatars0.githubusercontent.com/u/21058462?v=3&s=460",
+                          "https://pics0.baidu.com/feed/4b90f603738da977ab03b9e0731a501f8718e39b.jpeg?token=47f4e2bbdd4a1fe91303ae4679f70a2d",
                         width: "35%",
                       },
                     }),
@@ -1287,7 +1176,7 @@ webpackJsonp([2, 0], {
                 i("img", {
                   staticClass: "weui-tabbar__icon",
                   attrs: {
-                    src: "http://node-os.com/images/nodejs.png",
+                    src: "http://cn.vuejs.org/images/logo.png",
                     alt: "",
                   },
                 }),
